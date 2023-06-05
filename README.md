@@ -8,15 +8,15 @@
 
 ## Особенности чипа
 
-- Power CMOS process
-- Display mode (8 segments × 6 digits), support common anode LED output
-- Key scan (8 x 2-bit), enhanced anti-jamming button recognition circuit
-- Brightness adjustment circuit (adjustable duty cycle 8)
-- Two-wire serial interface (CLK, DIO)
-- Oscillation mode: Built-in RC oscillator
-- Built-in power-on reset circuit
-- Built-in automatic blanking circuit
-- Корпус: DIP20 / SOP20
+- КМОП (CMOS) технология
+- Режим отображения (8 сегментов × 6 цифр), для светодиодов с общим анодом
+- Сканирование клавиш (8 x 2 бита), улучшенная схема распознавания кнопок с защитой от помех
+- Схема регулировки яркости (8 ступеней яркости)
+- Двухпроводной последовательный интерфейс (CLK, DIO)
+- Режим колебаний: встроенный RC-генератор
+- Встроенная схема сброса при включении питания
+- Встроенная схема автоматического отключения
+- Корпус: DIP20/SOP20
 
 
 ## Аппаратное обеспечение
@@ -160,16 +160,11 @@ tm1637.writeData(0x00, buf, sizeof(buf));
 
 ![TM1637 WeMos D1 & R2 160MHz timing](https://raw.githubusercontent.com/Erriez/ErriezTM1637/master/extras/TM1637_timing_WeMos_D1_R2_160MHz.png)
 
-## Library dependencies
+## Зависимости библиотеки
 
-- The [Benchmark](https://github.com/Erriez/ErriezTM1637/blob/master/examples/ErriezTM1637Benchmark/ErriezTM1637Benchmark.ino) example uses [Erriez Timestamp](https://github.com/Erriez/ErriezTimestamp) library.
-
-
-## Library installation
-
-Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
+- В примере [Benchmark](https://github.com/Erriez/ErriezTM1637/blob/master/examples/ErriezTM1637Benchmark/ErriezTM1637Benchmark.ino) используется [Erriez Timestamp](https://github.com/Erriez/ErriezTimestamp) библиотека временных меток.
 
 
-## Other Arduino Libraries and Sketches from Erriez
+## Установка библиотеки
 
-* [Erriez Libraries and Sketches](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches)
+Пожалуйста, обратитесь к [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) странице.
